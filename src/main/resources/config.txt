@@ -1,0 +1,6 @@
+
+jdbcUrl=jdbc:mysql://47.100.23.51/jfinal_club?characterEncoding=utf8&useSSL=false&zeroDateTimeBehavior=convertToNull
+userName=root
+password=zhuwanqi19940509
+devMode=true
+
