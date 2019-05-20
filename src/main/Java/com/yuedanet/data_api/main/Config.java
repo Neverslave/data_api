@@ -3,6 +3,7 @@ package com.yuedanet.data_api.main;
 import com.jfinal.config.*;
 import com.jfinal.kit.Prop;
 import com.jfinal.kit.PropKit;
+import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
 import com.jfinal.plugin.druid.DruidPlugin;
 import com.jfinal.template.Engine;
 import com.yuedanet.data_api.routes.XMLRoutes;
@@ -41,9 +42,8 @@ public class Config extends JFinalConfig {
         DruidPlugin dp = new DruidPlugin(jdbcUrl, userName, password);
         plugins.add(dp);
 
-/*        ActiveRecordPlugin arp = new ActiveRecordPlugin(dp);
-        //arp.addMapping("")
-        plugins.add(arp);*/
+      ActiveRecordPlugin arp = new ActiveRecordPlugin(dp);
+        plugins.add(arp);
     }
 
     @Override
